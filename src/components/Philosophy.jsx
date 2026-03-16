@@ -18,7 +18,7 @@ const Philosophy = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
           >
-            "GOOD DESIGN IS <span className="text-outline">INVISIBLE.</span> GREAT CODE IS <span className="text-orange">INDISTINGUISHABLE</span> FROM MAGIC."
+            "DEVELOPING <span className="text-outline">SCALABLE</span> LOGIC. DESIGNING <span className="text-orange">ENGAGING</span> EXPERIENCES."
           </motion.h3>
           
           <motion.p 
@@ -28,7 +28,7 @@ const Philosophy = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
-            I bridge the gap between imagination and execution. My work lives at the intersection of aesthetic precision and technical excellence, ensuring that every pixel has a purpose and every line of code serves the user.
+            I am a multi-disciplinary creator bridging the gap between technical execution and visual storytelling. Whether building robust MERN stack applications, designing intuitive UI/UX, or producing compelling video and graphic edits, I strive for excellence in every medium.
           </motion.p>
         </div>
         

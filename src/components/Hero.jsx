@@ -15,10 +15,10 @@ const Hero = () => {
           >
             <div className="top-text-col">
               <strong>NS // WORKS</strong>
-              <p>FOR AUTHENTICATION OF NS-WORKS DESIGN<br/>SUMMER COLLECTION AND DEVELOPMENT FOR<br/>DEEP WINTER</p>
+              <p>MERN STACK • UI/UX DESIGN<br/>WEB DEVELOPMENT • GRAPHIC DESIGN<br/>VIDEO EDITING</p>
             </div>
             <div className="top-text-col hidden-mobile">
-              <p>FOR AUTHENTICATION OF NS-WORKS DESIGN<br/>SUMMER COLLECTION AND DEVELOPMENT FOR<br/>DEEP WINTER</p>
+              <p>MERN STACK • UI/UX DESIGN<br/>WEB DEVELOPMENT • GRAPHIC DESIGN<br/>VIDEO EDITING</p>
             </div>
           </motion.div>
 
@@ -39,7 +39,7 @@ const Hero = () => {
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.8, delay: 0.2 }}
               >
-                NISAL SHIRANDA —<br/>LINUX ENGINEER & FULL-<br/>STACK DEVELOPER
+                NISAL SHIRANDA —<br/>MERN STACK DEVELOPER &<br/>UI/UX DESIGNER
               </motion.h2>
               <motion.a 
                 href="#works" 
@@ -57,8 +57,8 @@ const Hero = () => {
         <div className="hero-image-wrapper">
           <div className="vertical-right-text">
             <span className="v-bold">NS-LAB</span>
-            <span>MATERIALS</span>
-            <span>OF CREATION</span>
+            <span>CREATIVE</span>
+            <span>DEVELOPMENT</span>
           </div>
 
           <motion.div 

@@ -4,10 +4,10 @@ import { motion } from 'framer-motion';
 
 const SelectedWorks = () => {
   const projects = [
-    { id: 1, title: 'NOTJECT 1', subtitle: 'WEB DESIGN • FIGMA', class: 'card-wide' },
-    { id: 2, title: 'PROJECT 2', subtitle: 'BRAND IDENTITY', class: 'card-tall' },
-    { id: 3, title: 'AETHER OS', subtitle: 'REACT JS • FRAMER MOTION • WEBGL', class: 'card-tall' },
-    { id: 4, title: 'VOID ANALYTICS', subtitle: 'UI/UX • DASHBOARD • POSTGRES', class: 'card-wide' },
+    { id: 1, title: 'E-COMMERCE PLATFORM', subtitle: 'MERN STACK • REDUX', class: 'card-wide' },
+    { id: 2, title: 'BRAND REDESIGN', subtitle: 'UI/UX • GRAPHIC DESIGN', class: 'card-tall' },
+    { id: 3, title: 'PROMO CAMPAIGN', subtitle: 'VIDEO EDITING • AFTER EFFECTS', class: 'card-tall' },
+    { id: 4, title: 'ANALYTICS DASHBOARD', subtitle: 'REACT.JS • TAILWIND CSS', class: 'card-wide' },
   ];
 
   return (
@@ -19,10 +19,10 @@ const SelectedWorks = () => {
 
         <div className="works-filter">
           <button className="active">ALL</button>
+          <button>MERN STACK</button>
           <button>UI/UX</button>
-          <button>WEB</button>
-          <button>SYSTEMS</button>
-          <button>LOGOS</button>
+          <button>GRAPHICS</button>
+          <button>VIDEO</button>
         </div>
 
         <div className="works-grid">

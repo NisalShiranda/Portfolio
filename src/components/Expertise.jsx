@@ -5,19 +5,19 @@ import { motion } from 'framer-motion';
 const Expertise = () => {
   const skills = [
     {
-      title: "UI/UX Design",
-      desc: "Crafting immersive digital experiences with focus on user psychology, minimalist aesthetics, and fluid interactions.",
-      items: ["FIGMA MASTERY", "MOTION DESIGN", "BRAND SYSTEM"],
+      title: "UI/UX & Web Dev",
+      desc: "Creating intuitive, responsive web interfaces and seamless user experiences matching modern design trends.",
+      items: ["FIGMA / ADOBE XD", "HTML / CSS / JS", "TAILWIND / BOOTSTRAP"],
     },
     {
-      title: "Frontend",
-      desc: "Translating design mockups into pixel-perfect, high-performance web applications using modern frameworks.",
-      items: ["REACT / NEXT.JS", "TAILWIND CSS", "THREE.JS / WEBGL"],
+      title: "MERN Stack",
+      desc: "Developing robust full-stack applications with high performance, secure APIs, and scalable databases.",
+      items: ["MONGODB", "EXPRESS.JS", "REACT.JS / NODE.JS"],
     },
     {
-      title: "Backend",
-      desc: "Building robust architecture & database layout to power seamless user experiences with scalability and security.",
-      items: ["NODE.JS / GO", "POSTGRESQL", "GRAPHQL APIs"],
+      title: "Creative Design",
+      desc: "Producing high-quality graphic assets and engaging video content to elevate brand identity and storytelling.",
+      items: ["GRAPHIC DESIGN", "VIDEO EDITING", "ADOBE CREATIVE CLOUD"],
     }
   ];
 
