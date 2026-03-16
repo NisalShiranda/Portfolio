@@ -46,7 +46,7 @@ const Hero = () => {
             animate={{ width: '100%' }}
             transition={{ duration: 1, delay: 0.5, ease: "easeInOut" }}
           ></motion.div>
-          <img src="/profile_portrait.webp" alt="Nisal Shiranda" className="hero-image" />
+          <img src="/profile_portrait.png" alt="Nisal Shiranda" className="hero-image" />
           <div className="side-text">WEB DEVELOPER & UI DESIGNER</div>
         </div>
       </div>
