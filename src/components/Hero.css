@@ -20,6 +20,29 @@
   z-index: 2;
 }
 
+.hero-top-text {
+  display: flex;
+  gap: 4rem;
+  margin-bottom: 2rem;
+}
+
+.top-text-col p {
+  font-size: 0.55rem;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  line-height: 1.8;
+  color: var(--text-muted);
+}
+
+.top-text-col strong {
+  display: block;
+  font-family: var(--font-display);
+  font-size: 0.65rem;
+  color: var(--text-primary);
+  margin-bottom: 0.25rem;
+  letter-spacing: 2px;
+}
+
 .hero-logo {
   font-size: 10rem;
   letter-spacing: -5px;
@@ -77,6 +100,27 @@
   max-width: 500px;
 }
 
+.vertical-right-text {
+  position: absolute;
+  right: -20px;
+  top: -40px;
+  writing-mode: vertical-rl;
+  display: flex;
+  gap: 0.5rem;
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: var(--text-muted);
+  z-index: 2;
+}
+
+.vertical-right-text .v-bold {
+  font-family: var(--font-display);
+  font-size: 0.9rem;
+  font-weight: 800;
+  color: var(--text-primary);
+}
+
 .hero-image {
   width: 100%;
   aspect-ratio: 1/1;
@@ -113,6 +157,11 @@
     gap: 4rem;
   }
   
+  .hero-top-text {
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+  
   .orange-overlay {
     left: 0;
     width: 100% !important;
@@ -122,6 +171,10 @@
 @media (max-width: 768px) {
   .hero {
     padding-top: 100px;
+  }
+  
+  .hidden-mobile {
+    display: none;
   }
   
   .hero-logo {
@@ -138,6 +191,7 @@
     margin-bottom: 1.5rem;
   }
   
+  .vertical-right-text,
   .side-text {
     display: none;
   }

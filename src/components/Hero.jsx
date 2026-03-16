@@ -7,6 +7,21 @@ const Hero = () => {
     <section className="hero" id="home">
       <div className="container hero-container">
         <div className="hero-content">
+          <motion.div 
+            className="hero-top-text"
+            initial={{ opacity: 0, y: -20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+          >
+            <div className="top-text-col">
+              <strong>NS // WORKS</strong>
+              <p>FOR AUTHENTICATION OF NS-WORKS DESIGN<br/>SUMMER COLLECTION AND DEVELOPMENT FOR<br/>DEEP WINTER</p>
+            </div>
+            <div className="top-text-col hidden-mobile">
+              <p>FOR AUTHENTICATION OF NS-WORKS DESIGN<br/>SUMMER COLLECTION AND DEVELOPMENT FOR<br/>DEEP WINTER</p>
+            </div>
+          </motion.div>
+
           <motion.h1 
             className="hero-logo"
             initial={{ opacity: 0, y: 50 }}
@@ -40,6 +55,12 @@ const Hero = () => {
         </div>
         
         <div className="hero-image-wrapper">
+          <div className="vertical-right-text">
+            <span className="v-bold">NS-LAB</span>
+            <span>MATERIALS</span>
+            <span>OF CREATION</span>
+          </div>
+
           <motion.div 
             className="orange-overlay"
             initial={{ width: 0 }}
