@@ -6,6 +6,7 @@ import SelectedWorks from './components/SelectedWorks';
 import Philosophy from './components/Philosophy';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
+import ScrollToTop from './components/ScrollToTop';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <Philosophy />
       <Contact />
       <Footer />
+      <ScrollToTop />
     </div>
   );
 }
