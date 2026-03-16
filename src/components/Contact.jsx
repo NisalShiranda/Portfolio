@@ -71,24 +71,78 @@ const Contact = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
-          <form className="contact-form">
-            <div className="form-group">
-              <label htmlFor="name">YOUR NAME</label>
-              <input type="text" id="name" placeholder="John Doe" />
-            </div>
+          <AnimatePresence mode="wait">
+            {status === 'success' ? (
+              <motion.div 
+                key="success"
+                className="success-message"
+                initial={{ opacity: 0, scale: 0.9 }}
+                animate={{ opacity: 1, scale: 1 }}
+                exit={{ opacity: 0, scale: 0.9 }}
+              >
+                <h3>THANK YOU!</h3>
+                <p>Your message has been sent successfully. I'll get back to you shortly.</p>
+                <button className="reset-btn" onClick={() => setStatus('')}>SEND ANOTHER</button>
+              </motion.div>
+            ) : (
+              <motion.form 
+                key="form"
+                className="contact-form"
+                onSubmit={handleSubmit}
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                exit={{ opacity: 0 }}
+              >
+                <div className="form-group">
+                  <label htmlFor="name">YOUR NAME</label>
+                  <input 
+                    type="text" 
+                    id="name" 
+                    placeholder="John Doe" 
+                    required 
+                    value={formData.name}
+                    onChange={handleChange}
+                  />
+                </div>
 
-            <div className="form-group">
-              <label htmlFor="email">EMAIL ADDRESS</label>
-              <input type="email" id="email" placeholder="john@example.com" />
-            </div>
+                <div className="form-group">
+                  <label htmlFor="email">EMAIL ADDRESS</label>
+                  <input 
+                    type="email" 
+                    id="email" 
+                    placeholder="john@example.com" 
+                    required 
+                    value={formData.email}
+                    onChange={handleChange}
+                  />
+                </div>
 
-            <div className="form-group">
-              <label htmlFor="message">PROJECT DETAILS</label>
-              <textarea id="message" rows="4" placeholder="Tell me about your project..."></textarea>
-            </div>
+                <div className="form-group">
+                  <label htmlFor="message">PROJECT DETAILS</label>
+                  <textarea 
+                    id="message" 
+                    rows="4" 
+                    placeholder="Tell me about your project..." 
+                    required 
+                    value={formData.message}
+                    onChange={handleChange}
+                  ></textarea>
+                </div>
 
-            <button type="submit" className="submit-btn">SEND MESSAGE</button>
-          </form>
+                {status === 'error' && (
+                  <p className="error-text">Something went wrong. Please try again.</p>
+                )}
+
+                <button 
+                  type="submit" 
+                  className="submit-btn" 
+                  disabled={status === 'sending'}
+                >
+                  {status === 'sending' ? 'SENDING...' : 'SEND MESSAGE'}
+                </button>
+              </motion.form>
+            )}
+          </AnimatePresence>
         </motion.div>
       </div>
     </section>

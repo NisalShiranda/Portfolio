@@ -58,20 +58,121 @@
 .menu-icon {
   display: flex;
   flex-direction: column;
-  gap: 4px;
+  gap: 6px;
   cursor: pointer;
+  position: relative;
+  z-index: 2001;
 }
 
 .menu-icon span {
   display: block;
-  width: 24px;
+  width: 28px;
   height: 2px;
   background-color: var(--text-primary);
-  transition: 0.3s;
+  transition: all 0.4s cubic-bezier(0.22, 1, 0.36, 1);
 }
+
+.menu-icon.active span:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.menu-icon.active span:nth-child(2) {
+  opacity: 0;
+  transform: translateX(10px);
+}
+
+.menu-icon.active span:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
 
 @media (max-width: 768px) {
   .nav-links {
     display: none;
   }
+
+  .desktop-contact {
+    display: none;
+  }
+
+  .navbar {
+    padding: 1rem 0;
+  }
+}
+
+/* Mobile Menu Overlay */
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: var(--bg-primary);
+  z-index: 2000;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10%;
+  position: relative;
+}
+
+.mobile-menu-close {
+  position: absolute;
+  top: 2rem;
+  right: 5%;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: var(--text-primary);
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.mobile-menu-close:hover {
+  transform: rotate(90deg);
+  color: var(--accent-orange);
+}
+
+.mobile-menu-links {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.mobile-menu-links a {
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  font-weight: 800;
+  letter-spacing: 1px;
+  color: var(--text-primary);
+  transition: color 0.3s;
+}
+
+.mobile-menu-links a:hover {
+  color: var(--accent-orange);
+}
+
+.mobile-menu-footer {
+  margin-top: auto;
+  padding-top: 4rem;
+  border-top: 1px solid var(--border-color);
+}
+
+.mobile-menu-footer p {
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: var(--text-muted);
+  margin-bottom: 2rem;
+}
+
+.mobile-socials {
+  display: flex;
+  gap: 2rem;
+}
+
+.mobile-socials a {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--text-primary);
 }
