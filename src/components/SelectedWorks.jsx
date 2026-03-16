@@ -1,14 +1,44 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './SelectedWorks.css';
-import { motion } from 'framer-motion';
+import { motion, AnimatePresence } from 'framer-motion';
 
 const SelectedWorks = () => {
+  const [filter, setFilter] = useState('UI/UX');
+
   const projects = [
-    { id: 1, title: 'E-COMMERCE PLATFORM', subtitle: 'MERN STACK • REDUX', class: 'card-1' },
-    { id: 2, title: 'BRAND REDESIGN', subtitle: 'UI/UX • GRAPHIC DESIGN', class: 'card-2' },
-    { id: 3, title: 'PROMO CAMPAIGN', subtitle: 'VIDEO EDITING • AFTER EFFECTS', class: 'card-3' },
-    { id: 4, title: 'ANALYTICS DASHBOARD', subtitle: 'REACT.JS • TAILWIND CSS', class: 'card-4' },
+    // UI/UX
+    { id: 1, title: 'BRAND REDESIGN', subtitle: 'UI/UX • GRAPHIC DESIGN', category: 'UI/UX' },
+    { id: 2, title: 'MOBILE APP UI', subtitle: 'UI/UX • FIGMA PROTOTYPING', category: 'UI/UX' },
+    { id: 3, title: 'FINTECH DASHBOARD', subtitle: 'UI/UX • USER RESEARCH', category: 'UI/UX' },
+    { id: 4, title: 'HEALTHCARE PORTAL', subtitle: 'WIREFRAMES • FIGMA', category: 'UI/UX' },
+    { id: 5, title: 'SAAS ONBOARDING', subtitle: 'UX FLOW • PROTOPIE', category: 'UI/UX' },
+    { id: 6, title: 'BOOKING PLATFORM', subtitle: 'HIGH-FIDELITY • UIKIT', category: 'UI/UX' },
+    // WEB
+    { id: 7, title: 'E-COMMERCE PLATFORM', subtitle: 'MERN STACK • REDUX', category: 'WEB' },
+    { id: 8, title: 'ANALYTICS DASHBOARD', subtitle: 'REACT.JS • TAILWIND CSS', category: 'WEB' },
+    { id: 9, title: 'REAL ESTATE PORTAL', subtitle: 'NEXT.JS • POSTGRESQL', category: 'WEB' },
+    { id: 10, title: 'AGENCY WEBSITE', subtitle: 'VUE.JS • GSAP ANIMATIONS', category: 'WEB' },
+    { id: 11, title: 'CRYPTO TRACKER', subtitle: 'REACT • WEBSOCKETS', category: 'WEB' },
+    { id: 12, title: 'SAAS LANDING PAGE', subtitle: 'ASTRO • TAILWIND CSS', category: 'WEB' },
+    // GRAPHICS
+    { id: 13, title: 'CORPORATE BRANDING', subtitle: 'GRAPHIC DESIGN • ILLUSTRATOR', category: 'GRAPHICS' },
+    { id: 14, title: 'SOCIAL MEDIA KIT', subtitle: 'PHOTOSHOP • ASSETS', category: 'GRAPHICS' },
+    { id: 15, title: 'EVENT POSTERS', subtitle: 'TYPOGRAPHY • DESIGN', category: 'GRAPHICS' },
+    { id: 16, title: '3D PRODUCT RENDER', subtitle: 'BLENDER • 3D MODELING', category: 'GRAPHICS' },
+    { id: 17, title: 'PACKAGING DESIGN', subtitle: 'PRINT READY • PACKAGING', category: 'GRAPHICS' },
+    { id: 18, title: 'LOGO COLLECTION', subtitle: 'VECTORS • ILLUSTRATOR', category: 'GRAPHICS' },
+    // VIDEO
+    { id: 19, title: 'PROMO CAMPAIGN', subtitle: 'VIDEO EDITING • AFTER EFFECTS', category: 'VIDEO' },
+    { id: 20, title: 'MOTION REEL', subtitle: 'PREMIERE PRO • MOTION', category: 'VIDEO' },
+    { id: 21, title: 'PRODUCT TEASER', subtitle: 'CINEMATOGRAPHY • COLOR', category: 'VIDEO' },
+    { id: 22, title: 'EXPLAINER ANIMATION', subtitle: 'AFTER EFFECTS • 2D ANIMATION', category: 'VIDEO' },
+    { id: 23, title: 'DOCUMENTARY SHORT', subtitle: 'COLOR GRADING • DAVINCI', category: 'VIDEO' },
+    { id: 24, title: 'SOCIAL SHORTS', subtitle: 'TIKTOK/REELS • CAPCUT PRO', category: 'VIDEO' },
   ];
+
+  const categories = ['UI/UX', 'WEB', 'GRAPHICS', 'VIDEO'];
+
+  const filteredProjects = projects.filter(project => project.category === filter);
 
   return (
     <section className="works" id="works">
@@ -18,23 +48,29 @@ const SelectedWorks = () => {
         </h2>
 
         <div className="works-filter">
-          <button className="active">ALL</button>
-          <button>MERN STACK</button>
-          <button>UI/UX</button>
-          <button>GRAPHICS</button>
-          <button>VIDEO</button>
+          {categories.map(cat => (
+            <button 
+              key={cat}
+              className={filter === cat ? "active" : ""}
+              onClick={() => setFilter(cat)}
+            >
+              {cat}
+            </button>
+          ))}
         </div>
 
-        <div className="works-grid">
-          {projects.map((project, index) => (
-            <motion.div 
-              className={`work-card ${project.class}`} 
-              key={project.id}
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6, delay: 0.1 * index }}
-            >
+        <motion.div layout className="works-grid">
+          <AnimatePresence mode="popLayout">
+            {filteredProjects.map((project) => (
+              <motion.div
+                className="work-card"
+                key={project.id}
+                layout
+                initial={{ opacity: 0, scale: 0.9 }}
+                animate={{ opacity: 1, scale: 1 }}
+                exit={{ opacity: 0, scale: 0.9 }}
+                transition={{ duration: 0.4 }}
+              >
               <div className="work-image-placeholder">
                 <span className="image-number">{project.id}</span>
               </div>
@@ -47,7 +83,8 @@ const SelectedWorks = () => {
               </div>
             </motion.div>
           ))}
-        </div>
+          </AnimatePresence>
+        </motion.div>
       </div>
     </section>
   );
