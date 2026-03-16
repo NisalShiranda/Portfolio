@@ -6,7 +6,7 @@ const Navbar = () => {
     <nav className="navbar">
       <div className="navbar-container">
         <div className="logo">
-          NS PROJECTS
+          NS.
         </div>
         <div className="nav-links">
           <a href="#expertise">EXPERTISE</a>

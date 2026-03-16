@@ -6,7 +6,7 @@ const Expertise = () => {
   const skills = [
     {
       title: "UI/UX & Web Dev",
-      desc: "Creating intuitive, responsive web interfaces and seamless user experiences matching modern design trends.",
+      desc: "Creating intuitive, responsive web interfaces and seamless user experiences matching modern designs.",
       items: ["FIGMA / ADOBE XD", "HTML / CSS / JS", "TAILWIND / BOOTSTRAP"],
     },
     {
@@ -27,13 +27,13 @@ const Expertise = () => {
         <h2 className="section-title text-light fade-up">
           <span className="section-number">01 /</span> EXPERTISE
         </h2>
-        
+
         <div className="watermark">01</div>
-        
+
         <div className="expertise-grid">
           {skills.map((skill, index) => (
-            <motion.div 
-              className="expertise-card" 
+            <motion.div
+              className="expertise-card"
               key={index}
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
