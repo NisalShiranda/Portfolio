@@ -49,7 +49,7 @@ const SelectedWorks = () => {
 
         <div className="works-filter">
           {categories.map(cat => (
-            <button 
+            <button
               key={cat}
               className={filter === cat ? "active" : ""}
               onClick={() => setFilter(cat)}
@@ -71,18 +71,18 @@ const SelectedWorks = () => {
                 exit={{ opacity: 0, scale: 0.9 }}
                 transition={{ duration: 0.4 }}
               >
-              <div className="work-image-placeholder">
-                <span className="image-number">{project.id}</span>
-              </div>
-              <div className="work-info">
-                <div>
-                  <h3 className="work-title">{project.title}</h3>
-                  <p className="work-subtitle">{project.subtitle}</p>
+                <div className="work-image-placeholder">
+                  <span className="image-number">{project.id}</span>
                 </div>
-                <button className="work-btn">→</button>
-              </div>
-            </motion.div>
-          ))}
+                <div className="work-info">
+                  <div>
+                    <h3 className="work-title">{project.title}</h3>
+                    <p className="work-subtitle">{project.subtitle}</p>
+                  </div>
+                  <button className="work-btn">→</button>
+                </div>
+              </motion.div>
+            ))}
           </AnimatePresence>
         </motion.div>
       </div>
