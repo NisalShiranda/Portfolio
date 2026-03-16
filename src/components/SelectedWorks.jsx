@@ -4,10 +4,10 @@ import { motion } from 'framer-motion';
 
 const SelectedWorks = () => {
   const projects = [
-    { id: 1, title: 'E-COMMERCE PLATFORM', subtitle: 'MERN STACK • REDUX', class: 'card-wide' },
-    { id: 2, title: 'BRAND REDESIGN', subtitle: 'UI/UX • GRAPHIC DESIGN', class: 'card-tall' },
-    { id: 3, title: 'PROMO CAMPAIGN', subtitle: 'VIDEO EDITING • AFTER EFFECTS', class: 'card-tall' },
-    { id: 4, title: 'ANALYTICS DASHBOARD', subtitle: 'REACT.JS • TAILWIND CSS', class: 'card-wide' },
+    { id: 1, title: 'E-COMMERCE PLATFORM', subtitle: 'MERN STACK • REDUX', class: 'card-1' },
+    { id: 2, title: 'BRAND REDESIGN', subtitle: 'UI/UX • GRAPHIC DESIGN', class: 'card-2' },
+    { id: 3, title: 'PROMO CAMPAIGN', subtitle: 'VIDEO EDITING • AFTER EFFECTS', class: 'card-3' },
+    { id: 4, title: 'ANALYTICS DASHBOARD', subtitle: 'REACT.JS • TAILWIND CSS', class: 'card-4' },
   ];
 
   return (
