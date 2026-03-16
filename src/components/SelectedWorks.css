@@ -1,0 +1,117 @@
+.works {
+  padding: 120px 0;
+  background-color: var(--bg-primary);
+}
+
+.works-filter {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 4rem;
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: 1rem;
+}
+
+.works-filter button {
+  background: none;
+  border: none;
+  font-family: var(--font-sans);
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: var(--text-muted);
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.works-filter button.active,
+.works-filter button:hover {
+  color: var(--accent-orange);
+}
+
+.works-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3rem;
+}
+
+.work-card {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.card-wide {
+  grid-column: span 1;
+}
+
+.card-tall {
+  grid-column: span 1;
+}
+
+.work-image-placeholder {
+  width: 100%;
+  aspect-ratio: 4/3;
+  background-color: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.5s ease;
+  overflow: hidden;
+}
+
+.work-card:hover .work-image-placeholder {
+  transform: scale(0.98);
+}
+
+.image-number {
+  font-family: var(--font-display);
+  font-size: 8rem;
+  color: var(--border-color);
+  opacity: 0.5;
+}
+
+.work-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.work-title {
+  font-size: 1.5rem;
+  font-family: var(--font-display);
+  letter-spacing: -0.5px;
+  margin-bottom: 0.5rem;
+}
+
+.work-subtitle {
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: var(--text-muted);
+}
+
+.work-btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid var(--border-color);
+  background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.work-card:hover .work-btn {
+  background-color: var(--text-primary);
+  color: var(--text-light);
+  border-color: var(--text-primary);
+}
+
+@media (max-width: 768px) {
+  .works-grid {
+    grid-template-columns: 1fr;
+  }
+}

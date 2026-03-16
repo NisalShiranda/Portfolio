@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@700;800;900&display=swap');
+
+:root {
+  --bg-primary: #ffffff;
+  --bg-secondary: #fdfdfd;
+  --bg-dark: #111111;
+  --text-primary: #111111;
+  --text-light: #ffffff;
+  --text-muted: #888888;
+  --accent-orange: #ff4500;
+  --border-color: #e5e5e5;
+  --border-dark: #333333;
+  
+  --font-sans: 'Inter', sans-serif;
+  --font-display: 'Montserrat', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  line-height: 1.6;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-display);
+  font-weight: 900;
+  line-height: 1.1;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 5%;
+}
+
+/* Animations */
+.fade-up {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeUp 0.8s ease forwards;
+}
+
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+::selection {
+  background-color: var(--accent-orange);
+  color: var(--text-light);
+}
+
+/* Utilities */
+.text-orange { color: var(--accent-orange); }
+.bg-dark { background-color: var(--bg-dark); color: var(--text-light); }
+.bg-light { background-color: var(--bg-primary); color: var(--text-primary); }
+
+.section-padding {
+  padding: 120px 0;
+}
+
+.section-title {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: 3rem;
+  margin-bottom: 4rem;
+}
+
+.section-number {
+  color: var(--accent-orange);
+  font-size: 1.25rem;
+  font-family: var(--font-sans);
+  font-weight: 700;
+}
+
+.section-divider {
+  border: none;
+  height: 1px;
+  background-color: var(--border-color);
+  margin-bottom: 4rem;
+}
+
+/* Outlined text effect */
+.text-outline {
+  color: transparent;
+  -webkit-text-stroke: 1px var(--text-primary);
+}
