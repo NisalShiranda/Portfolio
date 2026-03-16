@@ -54,3 +54,22 @@
     font-size: 20rem;
   }
 }
+
+@media (max-width: 768px) {
+  .philosophy {
+    padding: 80px 0;
+  }
+  
+  .philosophy-quote {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .philosophy-desc {
+    font-size: 1rem;
+  }
+  
+  .watermark-bg {
+    font-size: 10rem;
+  }
+}

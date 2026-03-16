@@ -118,3 +118,27 @@
     width: 100% !important;
   }
 }
+
+@media (max-width: 768px) {
+  .hero {
+    padding-top: 100px;
+  }
+  
+  .hero-logo {
+    font-size: 5rem;
+    letter-spacing: -2px;
+  }
+  
+  .vertical-text {
+    display: none;
+  }
+  
+  .hero-info h2 {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .side-text {
+    display: none;
+  }
+}

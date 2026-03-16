@@ -129,3 +129,22 @@
     max-width: 100%;
   }
 }
+
+@media (max-width: 768px) {
+  .contact {
+    padding: 80px 0;
+  }
+  
+  .email-link {
+    font-size: 1.5rem;
+  }
+  
+  .contact-form-wrapper {
+    padding: 1.5rem;
+  }
+  
+  .contact-socials {
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+}

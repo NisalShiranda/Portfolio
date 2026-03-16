@@ -74,3 +74,19 @@
     top: 50px;
   }
 }
+
+@media (max-width: 768px) {
+  .expertise {
+    padding: 80px 0;
+  }
+  
+  .expertise-card h3 {
+    font-size: 1.5rem;
+  }
+  
+  .watermark {
+    font-size: 12rem;
+    top: 30px;
+    right: -10%;
+  }
+}
