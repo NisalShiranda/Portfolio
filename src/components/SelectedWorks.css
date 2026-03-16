@@ -211,6 +211,32 @@
   margin-bottom: 2rem;
 }
 
+.modal-links {
+  display: flex;
+  gap: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+.modal-link-icon {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-light);
+  transition: all 0.3s ease;
+  background-color: rgba(255, 255, 255, 0.03);
+}
+
+.modal-link-icon:hover {
+  border-color: var(--accent-orange);
+  color: var(--accent-orange);
+  transform: translateY(-3px);
+  background-color: rgba(255, 69, 0, 0.05);
+}
+
 .modal-footer {
   font-size: 0.7rem;
   font-weight: 600;
