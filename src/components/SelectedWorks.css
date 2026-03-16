@@ -34,6 +34,11 @@
   gap: 3rem;
 }
 
+.grid-square .work-image-placeholder {
+  aspect-ratio: 1/1;
+}
+
+
 .work-card {
   display: flex;
   flex-direction: column;

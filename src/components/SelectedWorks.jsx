@@ -24,19 +24,19 @@ const SelectedWorks = () => {
     { id: 5, title: 'SAAS ONBOARDING', subtitle: 'UX FLOW • PROTOPIE', category: 'UI/UX', image: '/ui5.png', description: 'Optimized user onboarding experience to increase conversion rates and reduce user friction.', links: { behance: '#', figma: '#', github: '#' } },
     { id: 6, title: 'BOOKING PLATFORM', subtitle: 'HIGH-FIDELITY • UIKIT', category: 'UI/UX', image: '/ui6.png', description: 'Modern booking platform with integrated payment gateway and real-time availability tracking.', links: { behance: '#', figma: '#', github: '#' } },
     // WEB
-    { id: 7, title: 'E-COMMERCE PLATFORM', subtitle: 'MERN STACK • REDUX', category: 'WEB', image: '/project_placeholder.png', description: 'Full-stack e-commerce solution with dynamic product management, cart functionality, and secure checkout.', links: { behance: '#', figma: '#', github: '#' } },
-    { id: 8, title: 'ANALYTICS DASHBOARD', subtitle: 'REACT.JS • TAILWIND CSS', category: 'WEB', image: '/project_placeholder.png', description: 'Real-time analytics tool built with modern web technologies for performance and scalability.', links: { behance: '#', figma: '#', github: '#' } },
-    { id: 9, title: 'REAL ESTATE PORTAL', subtitle: 'NEXT.JS • POSTGRESQL', category: 'WEB', image: '/project_placeholder.png', description: 'Advanced property search engine with geographical mapping and lead generation tools.', links: { behance: '#', figma: '#', github: '#' } },
-    { id: 10, title: 'AGENCY WEBSITE', subtitle: 'VUE.JS • GSAP ANIMATIONS', category: 'WEB', image: '/project_placeholder.png', description: 'High-performance agency landing page with smooth parallax effects and interactive elements.', links: { behance: '#', figma: '#', github: '#' } },
-    { id: 11, title: 'CRYPTO TRACKER', subtitle: 'REACT • WEBSOCKETS', category: 'WEB', image: '/project_placeholder.png', description: 'Live cryptocurrency market tracker with real-time price updates and historical data charts.', links: { behance: '#', figma: '#', github: '#' } },
-    { id: 12, title: 'SAAS LANDING PAGE', subtitle: 'ASTRO • TAILWIND CSS', category: 'WEB', image: '/project_placeholder.png', description: 'Conversion-focused landing page for a SaaS platform with SEO optimization and fast load times.', links: { behance: '#', figma: '#', github: '#' } },
+    { id: 7, title: 'E-COMMERCE PLATFORM', subtitle: 'MERN STACK • REDUX', category: 'WEB', image: '/ui2.png', description: 'Full-stack e-commerce solution with dynamic product management, cart functionality, and secure checkout.', links: { behance: '#', figma: '#', github: '#' } },
+    { id: 8, title: 'ANALYTICS DASHBOARD', subtitle: 'REACT.JS • TAILWIND CSS', category: 'WEB', image: '/ui3.png', description: 'Real-time analytics tool built with modern web technologies for performance and scalability.', links: { behance: '#', figma: '#', github: '#' } },
+    { id: 9, title: 'REAL ESTATE PORTAL', subtitle: 'NEXT.JS • POSTGRESQL', category: 'WEB', image: '/ui5.png', description: 'Advanced property search engine with geographical mapping and lead generation tools.', links: { behance: '#', figma: '#', github: '#' } },
+    { id: 10, title: 'AGENCY WEBSITE', subtitle: 'VUE.JS • GSAP ANIMATIONS', category: 'WEB', image: '/web4.png', description: 'High-performance agency landing page with smooth parallax effects and interactive elements.', links: { behance: '#', figma: '#', github: '#' } },
+    { id: 11, title: 'CRYPTO TRACKER', subtitle: 'REACT • WEBSOCKETS', category: 'WEB', image: '/web5.png', description: 'Live cryptocurrency market tracker with real-time price updates and historical data charts.', links: { behance: '#', figma: '#', github: '#' } },
+    { id: 12, title: 'SAAS LANDING PAGE', subtitle: 'ASTRO • TAILWIND CSS', category: 'WEB', image: '/web6.png', description: 'Conversion-focused landing page for a SaaS platform with SEO optimization and fast load times.', links: { behance: '#', figma: '#', github: '#' } },
     // GRAPHICS
-    { id: 13, title: 'CORPORATE BRANDING', subtitle: 'GRAPHIC DESIGN • ILLUSTRATOR', category: 'GRAPHICS', image: '/project_placeholder.png', description: 'Professional corporate identity packages encompassing all visual touchpoints of the brand.', links: { behance: '#', figma: '#', github: '#' } },
-    { id: 14, title: 'SOCIAL MEDIA KIT', subtitle: 'PHOTOSHOP • ASSETS', category: 'GRAPHICS', image: '/project_placeholder.png', description: 'Cohesive set of social media templates and assets designed for consistent brand presence.', links: { behance: '#', figma: '#', github: '#' } },
-    { id: 15, title: 'EVENT POSTERS', subtitle: 'TYPOGRAPHY • DESIGN', category: 'GRAPHICS', image: '/project_placeholder.png', description: 'Eye-catching event promotional materials with bold typography and creative layouts.', links: { behance: '#', figma: '#', github: '#' } },
-    { id: 16, title: '3D PRODUCT RENDER', subtitle: 'BLENDER • 3D MODELING', category: 'GRAPHICS', image: '/project_placeholder.png', description: 'Photorealistic 3D product visualizations for marketing and digital commerce.', links: { behance: '#', figma: '#', github: '#' } },
-    { id: 17, title: 'PACKAGING DESIGN', subtitle: 'PRINT READY • PACKAGING', category: 'GRAPHICS', image: '/project_placeholder.png', description: 'Modern packaging solutions that combine functionality with shelf-standout visual appeal.', links: { behance: '#', figma: '#', github: '#' } },
-    { id: 18, title: 'LOGO COLLECTION', subtitle: 'VECTORS • ILLUSTRATOR', category: 'GRAPHICS', image: '/project_placeholder.png', description: 'A diverse collection of custom logo designs tailored to various industry sectors.', links: { behance: '#', figma: '#', github: '#' } },
+    { id: 13, title: 'CORPORATE BRANDING', subtitle: 'GRAPHIC DESIGN • ILLUSTRATOR', category: 'GRAPHICS', image: '/g1.png', description: 'Professional corporate identity packages encompassing all visual touchpoints of the brand.', links: { behance: '#', figma: '#', github: '#' } },
+    { id: 14, title: 'SOCIAL MEDIA KIT', subtitle: 'PHOTOSHOP • ASSETS', category: 'GRAPHICS', image: '/g2.png', description: 'Cohesive set of social media templates and assets designed for consistent brand presence.', links: { behance: '#', figma: '#', github: '#' } },
+    { id: 15, title: 'EVENT POSTERS', subtitle: 'TYPOGRAPHY • DESIGN', category: 'GRAPHICS', image: '/g3.png', description: 'Eye-catching event promotional materials with bold typography and creative layouts.', links: { behance: '#', figma: '#', github: '#' } },
+    { id: 16, title: '3D PRODUCT RENDER', subtitle: 'BLENDER • 3D MODELING', category: 'GRAPHICS', image: '/g4.png', description: 'Photorealistic 3D product visualizations for marketing and digital commerce.', links: { behance: '#', figma: '#', github: '#' } },
+    { id: 17, title: 'PACKAGING DESIGN', subtitle: 'PRINT READY • PACKAGING', category: 'GRAPHICS', image: '/g5.png', description: 'Modern packaging solutions that combine functionality with shelf-standout visual appeal.', links: { behance: '#', figma: '#', github: '#' } },
+    { id: 18, title: 'LOGO COLLECTION', subtitle: 'VECTORS • ILLUSTRATOR', category: 'GRAPHICS', image: '/g6.png', description: 'A diverse collection of custom logo designs tailored to various industry sectors.', links: { behance: '#', figma: '#', github: '#' } },
     // VIDEO
     { id: 19, title: 'PROMO CAMPAIGN', subtitle: 'VIDEO EDITING • AFTER EFFECTS', category: 'VIDEO', image: '/project_placeholder.png', description: 'Engaging promotional videos with high-quality editing and dynamic motion graphics.', links: { behance: '#', figma: '#', github: '#' } },
     { id: 20, title: 'MOTION REEL', subtitle: 'PREMIERE PRO • MOTION', category: 'VIDEO', image: '/project_placeholder.png', description: 'Showcase reel featuring professional video editing and innovative transitions.', links: { behance: '#', figma: '#', github: '#' } },
@@ -46,7 +46,7 @@ const SelectedWorks = () => {
     { id: 24, title: 'SOCIAL SHORTS', subtitle: 'TIKTOK/REELS • CAPCUT PRO', category: 'VIDEO', image: '/project_placeholder.png', description: 'Fast-paced, creative short-form content optimized for mobile social media platforms.', links: { behance: '#', figma: '#', github: '#' } },
   ];
 
-  const categories = ['UI/UX', 'WEB', 'GRAPHICS', 'VIDEO'];
+  const categories = ['UI/UX', 'WEB', 'GRAPHICS']; // Hidden 'VIDEO' for now
 
   const filteredProjects = projects.filter(project => project.category === filter);
 
@@ -69,7 +69,7 @@ const SelectedWorks = () => {
           ))}
         </div>
 
-        <motion.div layout className="works-grid">
+        <motion.div layout className={`works-grid ${filter === 'GRAPHICS' ? 'grid-square' : ''}`}>
           <AnimatePresence mode="popLayout">
             {filteredProjects.map((project) => (
               <motion.div
